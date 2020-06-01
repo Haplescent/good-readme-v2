@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Haplescent/good-readme-v2/issues"
   },
-  "homepage": "https://github.com/Haplescent/good-readme-v2#readme"
+  "homepage": "https://github.com/Haplescent/good-readme-v2#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "fs": "0.0.1-security",
+    "inquirer": "^7.1.0",
+    "util": "^0.12.3"
+  }
 }
