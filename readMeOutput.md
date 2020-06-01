@@ -1,6 +1,6 @@
-![travis build](https://img.shields.io/badge/PRs-welcome-green.svg)  
+![travis build](https://img.shields.io/github/last-commit/Haplescent/good-readme-v2.svg)  
 ## Title  
-1  
+  
 ## Description  
 2  
 ## Contents  
