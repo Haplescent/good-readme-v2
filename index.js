@@ -81,6 +81,9 @@ inquirer
           `![travis build](https://img.shields.io/github/last-commit/${answers.Github}/${answers.repoName}.svg) ![travis build](https://img.shields.io/github/contributors/${answers.Github}/${answers.repoName}.svg)  ![travis build](https://img.shields.io/github/commit-activity/w/${answers.Github}/${answers.repoName}.svg)  
 `
         );
+        console.log(res.data.avatar_url);
+        console.log(res.data.html_url);
+        console.log(res);
         delete answers.intro;
         delete answers.Github;
         delete answers.repoName;
@@ -94,6 +97,8 @@ inquirer
 ${map.get(item)}  
 `;
           }
+          writeString += `## Main Author  
+![Profile picture](${res.data.avatar_url})  ${res.data.html_url}`;
           return writeString;
         }
         writtenString = writeFileToReadMe(map);
@@ -104,6 +109,15 @@ ${map.get(item)}
           .catch((err) => {
             throw err;
           });
+        //         footString = `## Main Author
+        // ![Profile picture](${res.data.avatar_url})  ${res.data.html_url}`;
+        //         appendFileAsync("readMeOutput.md", footString)
+        //           .then((res) => {
+        //             console.log(`footString appended to readMeOutput`);
+        //           })
+        //           .catch((err) => {
+        //             throw err;
+        //           });
       });
   })
   .catch((error) => {
