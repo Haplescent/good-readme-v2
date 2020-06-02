@@ -65,6 +65,10 @@ inquirer
       name: "Github",
       message: "Github Username?",
     },
+    {
+      name: "repoName",
+      message: "Name of Repo?",
+    },
   ])
   .then((answers) => {
     // console.log(answers);
@@ -72,14 +76,15 @@ inquirer
     axios
       .get(`https://api.github.com/users/${answers.Github}`, config)
       .then(function (res) {
-        delete answers.intro;
-        delete answers.Github;
-        let map = buildMap(answers);
         writeFileAsync(
           "readMeOutput.md",
-          `![travis build](https://img.shields.io/github/last-commit/Haplescent/good-readme-v2.svg) ![travis build](https://img.shields.io/github/contributors/Haplescent/good-readme-v2.svg)  ![travis build](https://img.shields.io/github/commit-activity/w/Haplescent/good-readme-v2.svg)
+          `![travis build](https://img.shields.io/github/last-commit/${answers.Github}/${answers.repoName}.svg) ![travis build](https://img.shields.io/github/contributors/${answers.Github}/${answers.repoName}.svg)  ![travis build](https://img.shields.io/github/commit-activity/w/${answers.Github}/${answers.repoName}.svg)  
 `
         );
+        delete answers.intro;
+        delete answers.Github;
+        delete answers.repoName;
+        let map = buildMap(answers);
         function writeFileToReadMe(map) {
           writeString = "";
           for (let item of map.keys()) {
