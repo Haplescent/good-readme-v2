@@ -35,3 +35,7 @@ None
 ## Questions
 
 None
+
+## Main Author
+
+![Profile picture](https://avatars3.githubusercontent.com/u/13133436?v=4) https://github.com/Haplescent
