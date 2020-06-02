@@ -1,19 +1,19 @@
 ![travis build](https://img.shields.io/github/last-commit/Haplescent/good-readme-v2.svg) ![travis build](https://img.shields.io/github/contributors/Haplescent/good-readme-v2.svg)  ![travis build](https://img.shields.io/github/commit-activity/w/Haplescent/good-readme-v2.svg)  
 ## Title  
-1  
+Good ReadMe Generator  
 ## Description  
-2  
+This project was made for a homework assignment for UC Berkeley Extension  
 ## Contents  
-3  
+None  
 ## Installation  
-4  
+To install, git clone this repo and run npm install in root directory  
 ## Usage  
-5  
+To use, run node index.js and follow the terminal prompts  
 ## License  
-6  
+None  
 ## Contributing  
-7  
+Haplescent  
 ## Tests  
-8  
+None  
 ## Questions  
-9  
+None  
