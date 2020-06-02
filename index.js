@@ -77,7 +77,7 @@ inquirer
         let map = buildMap(answers);
         writeFileAsync(
           "readMeOutput.md",
-          `![travis build](https://img.shields.io/github/last-commit/Haplescent/good-readme-v2.svg)![travis build](https://img.shields.io/github/contributors/Haplescent/good-readme-v2.svg)  
+          `![travis build](https://img.shields.io/github/last-commit/Haplescent/good-readme-v2.svg) ![travis build](https://img.shields.io/github/contributors/Haplescent/good-readme-v2.svg)  ![travis build](https://img.shields.io/github/commit-activity/w/Haplescent/good-readme-v2.svg)
 `
         );
         function writeFileToReadMe(map) {
